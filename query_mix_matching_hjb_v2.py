@@ -38,7 +38,7 @@ def keyword_search(query, vector_db):
     video_scores = []
     
     for video in vector_db:
-        video_text = (video['video_name'] + ' ' + video['video_sub']).lower()
+        video_text = (video['video_name'] + ' ' + video['video_knowledgePoints']).lower()
         video_keywords = set(jieba.cut(video_text))
         common_keywords = query_keywords.intersection(video_keywords)
         

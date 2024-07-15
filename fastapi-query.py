@@ -176,7 +176,7 @@ def vector_search(query_embedding, vector_db, weight=0.5):
 # Load vector databases
 vector_db_files = {
     "znd": "znd456_vector_database.pkl",
-    "hjb": "hjb-sx-1.1_vector_database.pkl",
+    "hjb": "hjb_sx_1.2_vector_database.pkl",
     "znd_v2": "znd456_v2_vector_database.pkl"
 }
 vector_dbs = {}
